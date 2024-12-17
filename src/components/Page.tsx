@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input"
 import { Card } from "@/components/ui/card"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Clock, Filter, GitFork, Heart, MessageSquare, Search, Star, X } from 'lucide-react'
-import Image from "next/image"
+// import Image from "next/image"
 
 export default function Page() {
   return (
@@ -46,20 +46,20 @@ export default function Page() {
             
             <div className="flex flex-wrap gap-3">
               <Button variant="outline" className="border-gray-800">
-                <Clock className="w-4 h-4 mr-2" />
-                Latest nodejs/node release
+                <Clock className="w-4 h-4 mr-2 text-gray-950" />
+                <p className="text-gray-950">Latest nodejs/node release</p>
               </Button>
               <Button variant="outline" className="border-gray-800">
-                <Star className="w-4 h-4 mr-2" />
-                Create a profile README for me
+                <Star className="w-4 h-4 mr-2 text-gray-950" />
+                <p className="text-gray-950">Create a profile README for me</p>
               </Button>
             </div>
 
             <div className="flex items-center justify-between">
               <h1 className="text-2xl font-semibold">Home</h1>
               <Button variant="outline" size="sm" className="border-gray-800">
-                <Filter className="w-4 h-4 mr-2" />
-                Filter
+                <Filter className="w-4 h-4 mr-2 text-gray-950" />
+                <p className="text-gray-950">Filter</p>
               </Button>
             </div>
 
